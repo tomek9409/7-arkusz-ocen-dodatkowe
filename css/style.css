@@ -1,0 +1,159 @@
+* {
+  box-sizing: border-box;
+}
+
+#pracownicy {
+  height: 100%;
+  width: 135vh;
+  margin-left: 30px;
+  margin-top: 30px;
+  background: linear-gradient(
+    to left,
+    rgba(196, 184, 184, 0.904),
+    rgba(159, 175, 168, 0.918)
+  );
+  box-shadow: 15px 15px 1px rgba(141, 140, 140, 0.247);
+  display: flex;
+  flex-direction: column;
+  font-weight: 1000;
+  border-radius: 10%;
+  position: relative;
+}
+div div {
+  margin-left: 40px;
+}
+
+h2 {
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Aldrich";
+  font-size: 35px;
+}
+
+#oblicz {
+  width: 150px;
+  margin-top: 20px;
+}
+
+.uczen {
+  background-color: rgb(213, 230, 236);
+  border: 2px solid black;
+  width: 20vh;
+  display: inline-block;
+  text-align: center;
+  font-family: "Orelega One";
+  font-weight: 1;
+  align-items: stretch;
+}
+
+#title > span {
+  background: linear-gradient(
+    to right,
+    rgba(166, 232, 245, 1) 50%,
+    rgb(142, 224, 224)
+  );
+  text-align: center;
+  text-transform: uppercase;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-family: "Orelega One";
+  font-weight: 500;
+  font-size: 11px;
+  display: inline-block;
+  border: 2px solid black;
+}
+
+#title > span.zajecia-dodatkowe {
+  width: 20vh;
+}
+
+#title > span.biologia,
+span.informatyka,
+span.fizyka,
+span.geografia,
+span.matematyka,
+span.polski,
+span.biologia,
+span.chemia {
+  width: 10vh;
+}
+
+input[type="number"] {
+  width: 10vh;
+  text-align: center;
+  font-weight: 1000;
+  font-family: "Aldrich";
+}
+
+input[type="text"] {
+  width: 20vh;
+  text-align: center;
+  font-weight: 100;
+  font-family: "Orelega One";
+}
+
+input[type="text"] ~ .srednia {
+  background-color: cornsilk;
+  border: 2px solid black;
+  justify-items: center;
+  display: inline-block;
+  text-align: center;
+  width: 11vh;
+  font-family: "Aldrich";
+}
+
+button {
+  background: linear-gradient(
+    135deg,
+    rgba(153, 149, 224, 1) 0%,
+    rgba(143, 143, 240, 1) 20%,
+    rgba(175, 226, 250, 1) 52%,
+    rgba(161, 183, 240, 1) 57%,
+    rgba(190, 176, 186, 1) 81%,
+    rgba(166, 232, 245, 1) 100%
+  );
+  align-self: center;
+  transition: 0.4s;
+  width: 20vh;
+  height: 4vh;
+  font-weight: 650;
+  font-size: 15px;
+  border-radius: 10%;
+  margin-bottom: 20px;
+  cursor: grab;
+  color: rgb(22, 33, 59);
+  text-transform: uppercase;
+  font-family: "Orelega One";
+  animation: off 0.75s ease forwards;
+}
+
+button:hover {
+  transition: 0.4s;
+  border-radius: 50%;
+  box-shadow: 10px 10px 20px black;
+  animation: on 0.75s ease forwards;
+}
+
+@keyframes off {
+  0% {
+    background-size: 800%;
+  }
+  40% {
+    background-size: 800%;
+  }
+  100% {
+    background-size: 100%;
+  }
+}
+
+@keyframes on {
+  0% {
+    background-size: 100%;
+  }
+  80% {
+    background-size: 800%;
+  }
+  100% {
+    background-size: 800%;
+  }
+}
